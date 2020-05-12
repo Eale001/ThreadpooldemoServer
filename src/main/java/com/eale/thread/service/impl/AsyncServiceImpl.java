@@ -13,9 +13,9 @@ import org.springframework.stereotype.Service;
  * @Version 1.0
  **/
 @Service
-public class AsyncServieImpl implements AsyncService {
+public class AsyncServiceImpl implements AsyncService {
 
-    private static final Logger logger = LoggerFactory.getLogger(AsyncServieImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(AsyncServiceImpl.class);
 
     @Async("asyncServiceExecutor")
     @Override

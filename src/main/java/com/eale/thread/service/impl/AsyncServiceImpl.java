@@ -22,8 +22,9 @@ public class AsyncServiceImpl implements AsyncService {
     public void executeAsync() {
         logger.info("********* start executeAsync *****");
         try {
-            //睡上一千秒
-            Thread.sleep(1000);
+            //睡上一千
+            Thread.sleep(10);
+            logger.info("execute success !");
         }catch (Exception e){
             logger.error("**** start executeAsync exception ",e);
         }
